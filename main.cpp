@@ -16,24 +16,6 @@ public:
 		tmp.value = this->value + that.value;
 		return tmp;
 	}
-	Real operator-(const Real& that)
-	{
-		Real tmp;
-		tmp.value = this->value - that.value;
-		return tmp;
-	}
-	Real operator*(const Real& that)
-	{
-		Real tmp;
-		tmp.value = this->value * that.value;
-		return tmp;
-	}
-	Real operator/ (const Real& that)
-	{
-		Real tmp;
-		tmp.value = this->value / that.value;
-		return tmp;
-	}
 	void display()
 	{
 		cout << value;
@@ -44,9 +26,6 @@ main()
 	Real A(6.5);
 	Real B(3.5);
 	Real C = A + B;
-	//Real D = A - B;
-	//Real E = A * B;
-	//Real F = A / B;
 	C.display();
 	return 0;
 }
